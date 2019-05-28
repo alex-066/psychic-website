@@ -1,0 +1,30 @@
+.contact-info {
+    background-color: darkgreen;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__contact-us {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        margin: 2rem;
+    }
+
+    &__contact-us * {
+        background-color: aquamarine;
+        margin:.5rem;
+    }
+
+    &__map {
+        height: 24rem;
+        flex: 0 0 50%;
+        margin: 2rem;
+
+        //width: 58%;
+
+        background-color: darkorchid;
+    }
+}

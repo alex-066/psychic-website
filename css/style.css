@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6; }
+
+.about {
+  background-color: beige;
+  display: flex;
+  height: 28rem; }
+
+.about-us {
+  background-color: cadetblue;
+  padding: 2rem 2rem; }
+
+.mission-statement {
+  background-color: chocolate;
+  padding: 2rem 2rem; }
+
+.contact-info {
+  background-color: darkgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .contact-info__contact-us {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem; }
+  .contact-info__contact-us * {
+    background-color: aquamarine;
+    margin: .5rem; }
+  .contact-info__map {
+    height: 24rem;
+    flex: 0 0 50%;
+    margin: 2rem;
+    background-color: darkorchid; }
+
+.footer {
+  background-color: cornflowerblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 16rem; }
+  .footer__icon-box {
+    display: flex; }
+  .footer__icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    margin: .5rem; }
+
+.nav-primary {
+  background-color: antiquewhite;
+  padding: 2rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around; }
+  .nav-primary__list {
+    background-color: aqua;
+    margin-left: 6rem;
+    display: flex;
+    list-style: none; }
+  .nav-primary__item:not(:last-child) {
+    padding-right: 1rem; }
+
+.testimonials {
+  background-color: darkgoldenrod;
+  padding: 2rem 2rem; }
+  .testimonials div {
+    display: flex; }
+  .testimonials__title {
+    display: block; }
+  .testimonials__img {
+    background-color: deeppink;
+    flex: 0 0 32%;
+    height: 16rem; }
+  .testimonials__text {
+    background-color: burlywood;
+    padding: 2rem; }
+
+.hero-banner {
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 48rem; }

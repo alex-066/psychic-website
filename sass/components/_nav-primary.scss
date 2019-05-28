@@ -1,0 +1,26 @@
+.nav-primary {
+    //testing
+    background-color: antiquewhite;
+
+    padding: 2rem 0;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    
+    &__list {
+        background-color: aqua;
+
+        margin-left: 6rem;
+        display: flex;
+        list-style: none;
+    }
+
+    &__item {
+
+        &:not(:last-child) {
+            padding-right: 1rem;
+        }
+    }
+}

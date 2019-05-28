@@ -1,0 +1,21 @@
+.footer {
+    background-color: cornflowerblue;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 16rem;
+
+    &__icon-box {
+        display: flex;
+    }
+    
+    &__icon{
+        width: 1.75rem;
+        height: 1.75rem;
+
+        margin: .5rem;
+    }
+}
