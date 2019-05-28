@@ -14,7 +14,8 @@ html {
 body {
   font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
   font-weight: 400;
-  line-height: 1.6; }
+  line-height: 1.6;
+  color: #111; }
 
 .heading-primary--main {
   font-size: 4rem; }
@@ -102,6 +103,9 @@ p {
     margin-left: 6rem;
     display: flex;
     list-style: none; }
+  .nav-primary__link:link, .nav-primary__link:visited {
+    color: inherit;
+    text-decoration: none; }
   .nav-primary__item:not(:last-child) {
     padding-right: 1rem; }
 
