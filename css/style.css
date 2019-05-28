@@ -12,9 +12,27 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
   font-weight: 400;
   line-height: 1.6; }
+
+.heading-primary--main {
+  font-size: 4rem; }
+
+.heading-primary--sub {
+  font-size: 2rem; }
+
+.heading-secondary {
+  font-size: 2rem; }
+
+.heading-tertiary {
+  font-size: 1.6rem; }
+
+.sub-heading {
+  font-size: 1.4rem; }
+
+p {
+  font-size: 1.6rem; }
 
 .about {
   background-color: beige;
@@ -23,11 +41,19 @@ body {
 
 .about-us {
   background-color: cadetblue;
-  padding: 2rem 2rem; }
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column; }
+  .about-us__title {
+    align-self: center; }
 
 .mission-statement {
   background-color: chocolate;
-  padding: 2rem 2rem; }
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column; }
+  .mission-statement__title {
+    align-self: center; }
 
 .contact-info {
   background-color: darkgreen;
@@ -54,7 +80,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 16rem; }
+  height: 12rem; }
+  .footer * {
+    margin: .4rem; }
   .footer__icon-box {
     display: flex; }
   .footer__icon {
@@ -65,9 +93,10 @@ body {
 .nav-primary {
   background-color: antiquewhite;
   padding: 2rem 0;
-  width: 100%;
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  align-items: baseline;
+  font-size: 1.4rem; }
   .nav-primary__list {
     background-color: aqua;
     margin-left: 6rem;

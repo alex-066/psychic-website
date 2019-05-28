@@ -1,7 +1,7 @@
 .about {
     //testing
     background-color: beige;
-
+    
     display: flex;
 
     height: 28rem;
@@ -10,9 +10,23 @@
 .about-us {
     background-color: cadetblue;
     padding: 2rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        align-self: center;
+    }
 }
 
 .mission-statement {
     background-color: chocolate;
     padding: 2rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        align-self: center;
+    }
 }

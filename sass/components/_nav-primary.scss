@@ -4,10 +4,14 @@
 
     padding: 2rem 0;
 
-    width: 100%;
+    //width: 100%;
 
     display: flex;
     justify-content: space-around;
+    align-items: baseline;
+
+    font-size: 1.4rem;
+
     
     &__list {
         background-color: aqua;

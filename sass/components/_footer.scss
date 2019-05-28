@@ -6,7 +6,11 @@
     justify-content: center;
     align-items: center;
 
-    height: 16rem;
+    height: 12rem;
+
+    & * {
+        margin: .4rem;
+    }
 
     &__icon-box {
         display: flex;
