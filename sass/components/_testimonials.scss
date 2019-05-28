@@ -5,10 +5,12 @@
 
     div{
         display: flex;
+
+        margin-top: 1.6rem;
     }
 
     &__title {
-        display: block;
+        text-align: center;
     }
 
     &__img {

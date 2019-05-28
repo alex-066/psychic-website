@@ -80,7 +80,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 12rem; }
+  height: 8rem; }
   .footer * {
     margin: .4rem; }
   .footer__icon-box {
@@ -109,9 +109,10 @@ p {
   background-color: darkgoldenrod;
   padding: 2rem 2rem; }
   .testimonials div {
-    display: flex; }
+    display: flex;
+    margin-top: 1.6rem; }
   .testimonials__title {
-    display: block; }
+    text-align: center; }
   .testimonials__img {
     background-color: deeppink;
     flex: 0 0 32%;
