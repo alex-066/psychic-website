@@ -19,7 +19,8 @@ body {
   color: #111; }
 
 .heading-primary--main {
-  font-size: 4rem; }
+  font-family: Cambria, Georgia, serif;
+  font-size: 5rem; }
 
 .heading-primary--sub {
   font-size: 2rem; }
@@ -36,6 +37,33 @@ body {
 p {
   font-size: 1.6rem; }
 
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important;
+  /*@include respond(tab-port) {
+        margin-bottom: 3rem !important;
+    }*/ }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important;
+  /*@include respond(tab-port) {
+        margin-bottom: 5rem !important;
+    }*/ }
+
+.u-margin-top-small {
+  margin-top: 1rem !important; }
+
+.u-margin-top-medium {
+  margin-top: 4rem !important; }
+
+.u-margin-top-big {
+  margin-top: 8rem !important; }
+
+.u-margin-top-huge {
+  margin-top: 10rem !important; }
+
 .about {
   display: flex;
   height: 28rem; }
@@ -46,6 +74,7 @@ p {
     background-image: url(../img/about-pic.jpg);
     background-size: cover;
     background-position-y: -5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     width: 100%;
     height: 100%; }
 
@@ -62,6 +91,25 @@ p {
   flex-direction: column; }
   .mission-statement__title {
     align-self: center; }
+
+.btn {
+  background-color: #705CF2;
+  color: #fff; }
+  .btn, .btn:link, .btn:visited {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.2rem 2rem;
+    border-radius: 10rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    border: none;
+    cursor: pointer; }
+  .btn::after {
+    background-color: #705CF2; }
+  .btn:active, .btn:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 .contact-info {
   display: flex;
@@ -83,11 +131,13 @@ p {
       height: 100%; }
 
 .footer {
+  background-color: #B1A6F4;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 8rem; }
+  height: 8rem;
+  border-top: 3px solid #111; }
   .footer * {
     margin: .4rem; }
   .footer__icon-box {
@@ -99,21 +149,38 @@ p {
 
 .nav-primary {
   background-color: #B1A6F4;
+  background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
   padding: 2rem 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  border-bottom: 3px solid #111; }
+  .nav-primary .logo {
+    font-family: Cambria, Georgia, serif;
+    display: flex; }
+    .nav-primary .logo__icon {
+      width: 4.6rem;
+      height: 4.6rem;
+      margin: 0rem 2rem; }
   .nav-primary__list {
     margin-left: 6rem;
+    font-size: 1.5rem;
     display: flex;
     align-items: center;
     list-style: none; }
   .nav-primary__link:link, .nav-primary__link:visited {
     color: inherit;
     text-decoration: none; }
-  .nav-primary__item:not(:last-child) {
-    padding-right: 2rem; }
+  .nav-primary__item {
+    display: flex;
+    align-items: center; }
+    .nav-primary__item:not(:last-child) {
+      padding-right: 2rem; }
+  .nav-primary__item--phone-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin: 0rem .8rem; }
 
 .testimonials {
   margin: 2rem;
@@ -140,17 +207,31 @@ p {
   display: flex;
   margin: 2rem; }
   .services__service-container {
+    background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    border-radius: 2%;
+    padding: 2rem;
     flex-basis: 33%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 2rem; }
+    .services__service-container *:not(:last-child) {
+      padding-bottom: 2rem; }
 
 .hero-banner {
+  /*background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.2),
+        rgba($color-primary-dark, 0.2)),
+    url(../img/purple-clouds.jpg);*/
   background-image: url(../img/purple-clouds.jpg);
   background-size: cover;
+  border-bottom: 3px solid #111;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 48rem; }
+  .hero-banner__title:not(:last-child) {
+    padding-bottom: 4rem; }

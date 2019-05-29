@@ -4,6 +4,14 @@
     margin: 2rem;
 
     &__service-container {
+        //background-color: #99BBFF;
+        background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
+        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+
+        border-radius: 2%;
+
+        padding: 2rem;
+
         flex-basis: 33%;
 
         display: flex;
@@ -11,5 +19,11 @@
         align-items: center;
 
         margin: 0 2rem;
+
+        * {
+            &:not(:last-child) {
+                padding-bottom: 2rem;
+            }
+        }
     }
 }

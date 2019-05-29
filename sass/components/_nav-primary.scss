@@ -2,6 +2,9 @@
     //testing
     background-color: $color-primary-light;
 
+    //background-image: linear-gradient(to top, $color-primary-light  0%, $color-tertiary-light 100%);
+    background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
+
     padding: 2rem 0;
 
     //width: 100%;
@@ -12,8 +15,25 @@
 
     font-size: 1.4rem;
 
+    border-bottom: 3px solid $color-grey-dark-4;
+
+    .logo {
+        font-family: Cambria, Georgia, serif;
+
+        display: flex;
+
+        &__icon {
+            width: 4.6rem;
+            height: 4.6rem;
+
+            margin: 0rem 2rem;
+        }
+    }
+
     &__list {
         margin-left: 6rem;
+
+        font-size: 1.5rem;
         
         display: flex;
         align-items: center;
@@ -30,9 +50,17 @@
     }
 
     &__item {
+        display: flex;
+        align-items: center;
 
         &:not(:last-child) {
             padding-right: 2rem;
         }
+    }
+
+    &__item--phone-icon {
+        width: 2.4rem;
+        height: 2.4rem;
+        margin: 0rem .8rem;
     }
 }
