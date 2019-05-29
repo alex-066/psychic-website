@@ -1,6 +1,6 @@
 .nav-primary {
     //testing
-    background-color: antiquewhite;
+    background-color: $color-primary-light;
 
     padding: 2rem 0;
 
@@ -8,15 +8,16 @@
 
     display: flex;
     justify-content: space-around;
-    align-items: baseline;
+    align-items: center;
 
     font-size: 1.4rem;
 
     &__list {
-        background-color: aqua;
-
         margin-left: 6rem;
+        
         display: flex;
+        align-items: center;
+
         list-style: none;
     }
 
@@ -31,7 +32,7 @@
     &__item {
 
         &:not(:last-child) {
-            padding-right: 1rem;
+            padding-right: 2rem;
         }
     }
 }
