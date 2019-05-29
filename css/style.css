@@ -25,10 +25,10 @@ body {
   font-size: 2rem; }
 
 .heading-secondary {
-  font-size: 2rem; }
+  font-size: 2.4rem; }
 
 .heading-tertiary {
-  font-size: 1.6rem; }
+  font-size: 2rem; }
 
 .sub-heading {
   font-size: 1.4rem; }
@@ -135,6 +135,16 @@ p {
     width: 14rem; }
   .testimonials__text {
     padding: 2rem; }
+
+.services {
+  display: flex;
+  margin: 2rem; }
+  .services__service-container {
+    flex-basis: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2rem; }
 
 .hero-banner {
   background-image: url(../img/purple-clouds.jpg);

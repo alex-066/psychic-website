@@ -1,0 +1,15 @@
+.services {
+    display: flex;
+
+    margin: 2rem;
+
+    &__service-container {
+        flex-basis: 33%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin: 0 2rem;
+    }
+}
