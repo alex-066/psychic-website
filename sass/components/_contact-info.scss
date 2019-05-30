@@ -23,6 +23,12 @@
         justify-content: start;
         align-items: center;
 
+        font-weight: 800;
+        p{
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+        }
+
         &--1 {
             width: 50%;
         }

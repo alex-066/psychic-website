@@ -124,7 +124,11 @@ p {
     width: 100%;
     display: flex;
     justify-content: start;
-    align-items: center; }
+    align-items: center;
+    font-weight: 800; }
+    .contact-info__section p {
+      font-size: 1.6rem;
+      line-height: 2.2rem; }
     .contact-info__section--1 {
       width: 50%; }
     .contact-info__section--2 {
