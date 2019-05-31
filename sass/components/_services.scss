@@ -3,6 +3,16 @@
 
     margin: 2rem;
 
+    &__icon {
+        width: 16rem;
+        height: 16rem;
+
+        @media only screen and (max-width: $bp-largest) {
+            width: 14rem;
+            height: 14rem;
+        }
+    }
+
     &__service-container {
         //background-color: #99BBFF;
         background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
@@ -12,6 +22,10 @@
 
         padding: 2rem;
 
+        @media only screen and (max-width: $bp-largest) {
+            padding: 1.4rem;
+        }
+
         flex-basis: 33%;
 
         display: flex;
@@ -19,6 +33,10 @@
         align-items: center;
 
         margin: 0 2rem;
+
+        @media only screen and (max-width: $bp-largest) {
+            margin: 0 1.4rem;
+        }
 
         * {
             &:not(:last-child) {

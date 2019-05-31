@@ -14,6 +14,15 @@
         //Change for the <button> element
         border: none;
         cursor: pointer;
+
+        @media only screen and (max-width: $bp-largest) {
+            font-size: 1.4rem;
+
+            width: 1.2rem;
+            height: 1.2rem;
+
+            margin: 0rem 1.4rem;
+        }
     }
 
     background-color: $color-primary;

@@ -21,12 +21,18 @@ body {
 .heading-primary--main {
   font-family: Cambria, Georgia, serif;
   font-size: 5rem; }
+  @media only screen and (max-width: 48em) {
+    .heading-primary--main {
+      font-size: 4.4rem; } }
 
 .heading-primary--sub {
   font-size: 2rem; }
 
 .heading-secondary {
   font-size: 2.4rem; }
+  @media only screen and (max-width: 48em) {
+    .heading-secondary {
+      font-size: 2rem; } }
 
 .heading-tertiary {
   font-size: 2rem; }
@@ -36,6 +42,9 @@ body {
 
 p {
   font-size: 1.6rem; }
+  @media only screen and (max-width: 48em) {
+    p {
+      font-size: 1.4rem; } }
 
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important; }
@@ -104,6 +113,12 @@ p {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     border: none;
     cursor: pointer; }
+    @media only screen and (max-width: 48em) {
+      .btn, .btn:link, .btn:visited {
+        font-size: 1.4rem;
+        width: 1.2rem;
+        height: 1.2rem;
+        margin: 0rem 1.4rem; } }
   .btn::after {
     background-color: #705CF2; }
   .btn:active, .btn:focus {
@@ -127,7 +142,6 @@ p {
     align-items: center;
     font-weight: 800; }
     .contact-info__section p {
-      font-size: 1.6rem;
       line-height: 2.2rem; }
     .contact-info__section--1 {
       width: 50%; }
@@ -158,6 +172,10 @@ p {
     width: 1.75rem;
     height: 1.75rem;
     margin: .5rem; }
+    @media only screen and (max-width: 48em) {
+      .footer__icon {
+        width: 1.5rem;
+        height: 1.5rem; } }
 
 .nav-primary {
   background-color: #B1A6F4;
@@ -166,18 +184,26 @@ p {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   border-bottom: 3px solid #111; }
+  @media only screen and (max-width: 48em) {
+    .nav-primary {
+      font-size: 1.2rem; } }
   .nav-primary .logo {
     font-family: Cambria, Georgia, serif;
-    display: flex; }
+    display: flex;
+    align-items: center; }
     .nav-primary .logo__icon {
       width: 4.6rem;
       height: 4.6rem;
       margin: 0rem 2rem; }
+      @media only screen and (max-width: 48em) {
+        .nav-primary .logo__icon {
+          width: 3.6rem;
+          height: 3.6rem;
+          margin: 0rem 1rem; } }
   .nav-primary__list {
     margin-left: 6rem;
-    font-size: 1.5rem;
     display: flex;
     align-items: center;
     list-style: none; }
@@ -193,6 +219,11 @@ p {
     width: 2.4rem;
     height: 2.4rem;
     margin: 0rem .8rem; }
+    @media only screen and (max-width: 48em) {
+      .nav-primary__item--phone-icon {
+        width: 2.2rem;
+        height: 2.2rem;
+        margin: 0rem .6rem; } }
 
 .testimonials {
   margin: 2rem;
@@ -219,12 +250,22 @@ p {
     backface-visibility: hidden;
     width: 14rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+    @media only screen and (max-width: 48em) {
+      .testimonials__img {
+        width: 12rem; } }
   .testimonials__text {
     padding: 2rem; }
 
 .services {
   display: flex;
   margin: 2rem; }
+  .services__icon {
+    width: 16rem;
+    height: 16rem; }
+    @media only screen and (max-width: 48em) {
+      .services__icon {
+        width: 14rem;
+        height: 14rem; } }
   .services__service-container {
     background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
@@ -235,6 +276,12 @@ p {
     flex-direction: column;
     align-items: center;
     margin: 0 2rem; }
+    @media only screen and (max-width: 48em) {
+      .services__service-container {
+        padding: 1.4rem; } }
+    @media only screen and (max-width: 48em) {
+      .services__service-container {
+        margin: 0 1.4rem; } }
     .services__service-container *:not(:last-child) {
       padding-bottom: 2rem; }
 
